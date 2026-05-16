@@ -1,21 +1,32 @@
-# Ames Housing - House Price Prediction
+# Ames Housing — House Price Prediction
 
-This repository contains a Jupyter notebook and dataset for predicting house prices using the Ames Housing dataset.
+Short description
+- Jupyter notebook and ML pipeline to predict sale prices on the Ames Housing dataset.
 
-Contents:
-- `Ames_Housing.ipynb` - Main notebook with preprocessing, modeling, and evaluation.
-- `AmesHousing.csv` - Dataset (already in the repository).
+Project overview
+- `Ames_Housing.ipynb`: end-to-end notebook that performs data loading, preprocessing (imputation, encoding, scaling, categorical embeddings), feature selection, model training (LinearRegression, ElasticNet, MLPRegressor, GradientBoostingRegressor), hyperparameter tuning with `GridSearchCV`, and evaluation.
+- `AmesHousing.csv`: dataset used for training and evaluation.
 
-Quick steps to push this local repo to GitHub:
+Quick start
 
-1. Create a new repository on GitHub (via the website) named e.g. `ames_housing`.
-2. In this folder, add the remote and push:
+1. Create and activate a Python environment, then install dependencies:
 
 ```powershell
-cd /d C:\Desktop\Projects\ames_housing
-git remote add origin https://github.com/<your-username>/<your-repo>.git
-git branch -M main
-git push -u origin main
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
 ```
 
-If you'd like, provide the GitHub repo URL or a personal access token and I can add the remote and push for you.
+2. Open the notebook and run cells (recommended: use Jupyter Lab or VS Code notebook support).
+
+Notes
+- This repository does not include a license file (per project preference).
+- The notebook logs preprocessing decisions and prints the top correlated features; the target variable is transformed with `log1p` during modeling.
+
+Suggested GitHub description (one line)
+- "Jupyter notebook and ML pipeline to predict Ames Housing sale prices."
+
+Suggested topics/tags
+- `machine-learning`, `regression`, `scikit-learn`, `jupyter-notebook`, `dataset`
+
+If you'd like additional README sections (examples, results, model artifacts, or visual badges), tell me what to include and I'll add them.
