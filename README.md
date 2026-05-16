@@ -1,5 +1,10 @@
 # Ames Housing — House Price Prediction
 
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-0.24%2B-orange.svg)](https://scikit-learn.org/)
+[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
+
+
 Short description
 - Jupyter notebook and ML pipeline to predict sale prices on the Ames Housing dataset.
 
